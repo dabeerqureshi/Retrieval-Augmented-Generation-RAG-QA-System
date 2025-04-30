@@ -1,0 +1,7 @@
+langchain-community
+pypdf
+sentence-transformers
+pinecone
+langchain_pinecone
+langchain_openai
+transformers
