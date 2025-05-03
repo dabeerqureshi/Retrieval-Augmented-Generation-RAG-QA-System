@@ -74,8 +74,10 @@ def create_rag_system(pdf_directory="data", index_name="rag-system-index"):
     print("Creating RAG chain...")
     prompt_template = """
     You are an assistant for question-answering tasks.
-    Use the following retrieved context to answer.
-    Be accurate. If unsure, say "I don't know."
+    Use the following pieces of retrieved context to extract the most relevant answer.
+    Answer the question directly and if the answer is a number or a specific fact, give it concisely.
+    If you don't know the answer, say that you don't know.
+    write it more carefully and when it does not know the answer say i dont know instead of wrong results
 
     Context:
     {context}
